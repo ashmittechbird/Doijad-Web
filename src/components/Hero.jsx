@@ -47,7 +47,7 @@ export default function Hero() {
       <div className="hero-photo relative h-[60vh] w-full overflow-hidden md:h-[68vh]">
         <video
           className="h-full w-full object-cover object-center"
-          src="/160974-822391309_medium.mp4"
+          src="/hero-welding-sparks.mp4"
           autoPlay
           loop
           muted

@@ -5,7 +5,7 @@ export const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Training", href: "#training" },
-  { label: "Team", href: "#team" },
+  // { label: "Team", href: "#team" }, // section moved to the About Us page
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -26,16 +26,14 @@ export const HERO_STATS = [
 ];
 
 export const ABOUT = {
-  statement: {
-    before: "We turn traditional processes into ",
-    accent: "reliable, efficient and scalable",
-    after: " systems.",
-  },
-  paragraphs: [
-    "At Doijad Automation and Robotics Pvt. Ltd., we specialize in delivering advanced industrial automation solutions that help businesses improve productivity, consistency and operational efficiency. Our approach combines practical industry experience with innovative thinking to solve complex manufacturing challenges.",
-    "With a team of skilled automation professionals, we support industries at every stage — from concept development and system design to integration and implementation. Our solutions simplify operations, reduce manual dependency and enable smarter, future-ready production environments.",
-  ],
+  heading: "About Us",
+  paragraph:
+    "Doijad Automation and Robotics Pvt. Ltd. is a Pune-based industrial automation company delivering advanced automation solutions that help businesses improve productivity, consistency and operational efficiency. Our team supports industries at every stage — from concept development and system design to integration, implementation and ongoing maintenance.",
+  img: "/about.jpg",
 };
+
+export const SERVICES_INTRO =
+  "Six disciplines, one accountable team — from robot selection and control architecture to the special purpose machines and training that keep your floor running.";
 
 export const SERVICES = [
   {
@@ -43,36 +41,42 @@ export const SERVICES = [
     title: "Industrial Robot Integration",
     desc: "Robotic cells engineered around your process — from robot selection and end-of-arm tooling to programming, safety and proven cycle time on your floor.",
     img: "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1200&q=80",
+    video: "https://assets.mixkit.co/videos/20970/20970-720.mp4",
   },
   {
     id: "02",
     title: "Control Systems Design & Integration",
     desc: "PLC and control architecture designed, panel-built and integrated as one system — so every actuator, sensor and safety circuit speaks the same language.",
     img: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    video: "https://assets.mixkit.co/videos/23693/23693-720.mp4",
   },
   {
     id: "03",
     title: "SPM Design & Manufacturing",
     desc: "When a standard machine doesn't exist for your problem, we design and manufacture a special purpose machine that does — concept to commissioning.",
     img: "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&w=1200&q=80",
+    video: "https://assets.mixkit.co/videos/47755/47755-720.mp4",
   },
   {
     id: "04",
     title: "Simulation",
     desc: "Reach studies, cycle-time validation and virtual commissioning — you see the system running on screen before a single part is cut.",
     img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80",
+    video: "https://assets.mixkit.co/videos/21231/21231-720.mp4",
   },
   {
     id: "05",
     title: "Maintenance Support",
     desc: "Preventive maintenance, rapid troubleshooting and support that keeps your automation running the way it did on day one.",
     img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
+    video: "https://assets.mixkit.co/videos/23484/23484-720.mp4",
   },
   {
     id: "06",
     title: "Industrial Robotics Training",
     desc: "Hands-on robot programming, system operation and safety training for students, engineers and working professionals — bridging academia and the shop floor.",
     img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=80",
+    video: "https://assets.mixkit.co/videos/22032/22032-720.mp4",
   },
 ];
 

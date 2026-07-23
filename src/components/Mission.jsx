@@ -7,52 +7,40 @@ export default function Mission() {
     <section id="about" className="bg-bg text-cream">
       <div className="mx-auto w-full max-w-[1400px] border-t border-cream/[0.06] px-6 py-20 md:px-10 md:py-28">
 
-        {/* Eyebrow */}
+        {/* Photo banner — full width to the page padding, plus an angled "About Us"
+            badge breaking past the frame at the bottom-left */}
         <Reveal>
-          <p className="label text-accent">About us</p>
+          <div className="relative pt-3 md:pt-4">
+            <div className="overflow-hidden">
+              <img
+                src={ABOUT.img}
+                alt="Industrial facility in operation"
+                loading="lazy"
+                className="h-[46vh] w-full object-cover md:h-[62vh]"
+              />
+            </div>
+            <div
+              className="absolute -bottom-7 left-0 bg-bg py-5 pl-6 pr-14 sm:pl-10 sm:pr-20"
+              style={{ clipPath: "polygon(0 0, 78% 0, 100% 100%, 0 100%)" }}
+            >
+              <h2 className="font-display text-[clamp(1.8rem,3.5vw,2.8rem)] font-bold tracking-[-0.03em] text-cream">
+                {ABOUT.heading}
+              </h2>
+            </div>
+          </div>
         </Reveal>
 
-        {/* 2-column statement */}
-        <div className="mt-10 grid gap-10 md:grid-cols-2 md:gap-16">
-          {/* Left — large statement */}
-          <Reveal delay={0.05}>
-            <p className="font-display text-[clamp(1.5rem,2.8vw,2.3rem)] font-semibold leading-[1.22] tracking-[-0.025em] text-cream">
-              At Doijad Automation &amp; Robotics, we leverage our experience to{" "}
-              <span className="text-cream/40">
-                advance the industrial capabilities of our clients.
-              </span>
-            </p>
-          </Reveal>
-
-          {/* Right — body + CTA */}
-          <Reveal delay={0.1}>
-            <div className="md:pt-1">
-              <p className="font-body text-[0.95rem] leading-[1.85] text-cream/45">
-                {ABOUT.paragraphs[0]}
-              </p>
-              <p className="mt-5 font-body text-[0.95rem] leading-[1.85] text-cream/45">
-                {ABOUT.paragraphs[1]}
-              </p>
-              <button
-                onClick={() => scrollToSection("#contact")}
-                className="mt-8 inline-flex items-center gap-2 border-b border-cream/20 pb-0.5 font-sans text-sm font-semibold text-cream transition-all duration-300 hover:border-accent hover:text-accent"
-              >
-                Start a project →
-              </button>
-            </div>
-          </Reveal>
-        </div>
-
-        {/* Full-width editorial photo */}
-        <Reveal delay={0.15} className="mt-14 md:mt-20">
-          <div className="overflow-hidden">
-            <img
-              src="/about.jpg"
-              alt="Laser cutting machine in operation"
-              loading="lazy"
-              className="h-[40vh] w-full object-cover transition-transform duration-700 hover:scale-[1.02] md:h-[54vh]"
-            />
-          </div>
+        {/* Body copy */}
+        <Reveal delay={0.1} className="mt-16 md:mt-20">
+          <p className="max-w-3xl font-body text-[1.1rem] leading-[1.85] text-cream/70">
+            {ABOUT.paragraph}
+          </p>
+          <button
+            onClick={() => scrollToSection("#contact")}
+            className="mt-8 inline-flex items-center gap-2 border-b border-cream/20 pb-0.5 font-sans text-sm font-semibold text-cream transition-all duration-300 hover:border-accent hover:text-accent"
+          >
+            Start a project →
+          </button>
         </Reveal>
       </div>
     </section>

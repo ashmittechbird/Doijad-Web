@@ -16,6 +16,11 @@
   --color-accent:    #C43E1C;
   --color-accent-2:  #8E2D13;
 
+  /* Light-section palette — alternated against the dark sections above for contrast */
+  --color-paper:     #F3EFE6;
+  --color-paper-2:   #E7DFCE;
+  --color-charcoal:  #15120D;
+
   /* Legacy aliases kept so anim.jsx + existing class names compile without errors */
   --color-ink:          #0A0A0A;
   --color-ink-2:        #111111;

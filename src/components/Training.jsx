@@ -135,7 +135,7 @@ export default function Training() {
 
             {/* Badge on image */}
             <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 max-w-[16rem] bg-accent p-5">
-              <p className="display text-xl text-cream">Industry-ready</p>
+              <p className="display text-xl text-cream">Training</p>
               <p className="mt-1.5 text-xs font-medium leading-relaxed text-cream/70">
                 Students, engineers &amp; professionals — bridging academia and the shop floor.
               </p>
@@ -148,7 +148,7 @@ export default function Training() {
             className="absolute right-0 top-0 h-full w-1/2 hidden md:flex items-center overflow-y-auto"
           >
             <div className="px-10 lg:px-14 max-w-[520px] py-10">
-              <h2 className="font-display text-[clamp(1.8rem,3vw,2.5rem)] font-bold leading-[1.1] tracking-[-0.03em] text-cream">
+              <h2 className="font-display text-[clamp(1.8rem,3.5vw,2.8rem)] font-bold leading-[1.1] tracking-[-0.03em] text-cream">
                 We train the people who{" "}
                 <span className="text-cream/35">run the robots.</span>
               </h2>
@@ -184,7 +184,7 @@ export default function Training() {
 
       {/* Mobile-only content (hidden on desktop) */}
       <div className="md:hidden mx-auto max-w-[1400px] px-6 pb-16">
-        <h2 className="font-display text-[clamp(2rem,6vw,3rem)] font-bold leading-[1.1] tracking-[-0.03em] text-cream">
+        <h2 className="font-display text-[clamp(1.8rem,3.5vw,2.8rem)] font-bold leading-[1.1] tracking-[-0.03em] text-cream">
           We train the people who{" "}
           <span className="text-cream/35">run the robots.</span>
         </h2>

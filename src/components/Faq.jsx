@@ -10,7 +10,7 @@ function FaqItem({ item, open, onToggle }) {
       <button
         onClick={onToggle}
         aria-expanded={open}
-        className="group flex w-full items-center justify-between gap-6 py-6 text-left"
+        className="group flex w-full items-center justify-between gap-6 py-4 text-left"
       >
         <span className="font-sans text-[0.95rem] font-semibold leading-snug text-cream md:text-[1.05rem]">
           {item.q}
@@ -31,7 +31,7 @@ function FaqItem({ item, open, onToggle }) {
         }`}
       >
         <div className="overflow-hidden">
-          <p className="max-w-2xl pb-7 text-[0.9rem] leading-[1.85] text-cream/40">
+          <p className="max-w-2xl pb-5 text-[0.9rem] leading-[1.75] text-cream/40">
             {item.a}
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function Faq() {
       <div className="border-t border-cream/[0.06]">
 
         {/* Eyebrow */}
-        <div className="mx-auto max-w-[1400px] px-6 pt-16 md:px-10 md:pt-20">
+        <div className="mx-auto max-w-[1400px] px-6 pt-10 md:px-10 md:pt-14">
           <Reveal>
             <p className="label text-accent">FAQ</p>
           </Reveal>
@@ -62,16 +62,12 @@ export default function Faq() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-[1400px] px-6 pb-20 pt-10 md:px-10 md:pb-28">
-        <div className="grid gap-12 md:grid-cols-[1fr_1.8fr] md:gap-20">
+      <div className="mx-auto max-w-[1400px] px-6 pb-14 pt-6 md:px-10 md:pb-16">
+        <div className="grid gap-10 md:grid-cols-[1fr_1.8fr] md:gap-20">
 
-          {/* Left — sub-heading + CTA */}
+          {/* Left — supporting text + CTA */}
           <Reveal delay={0.06}>
-            <p className="font-display text-[clamp(1.2rem,2.2vw,1.7rem)] font-semibold leading-[1.28] tracking-[-0.02em] text-cream">
-              Common questions<br />
-              <span className="text-cream/35">honestly answered.</span>
-            </p>
-            <p className="mt-6 text-[0.9rem] leading-[1.85] text-cream/35">
+            <p className="text-[0.9rem] leading-[1.85] text-cream/35">
               Still weighing it up? Tell us about your part and your target
               cycle time — we&apos;ll come back with honest numbers.
             </p>
